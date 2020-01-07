@@ -1,0 +1,20 @@
+body {
+    background-color: #D0D0D0;
+    padding-top: 70px;
+}
+.color-white {
+    background-color: white;
+}
+#content-left {
+    height: 2000px;
+}
+#content-right {
+    height: 2000px;
+}
+.search {
+    margin-left: 87px;
+}
+#inputSearch{
+    width: 500px;
+}
+

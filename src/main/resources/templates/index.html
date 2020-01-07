@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到浅浅博客首页</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid color-white">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">首页</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">无人立我与黄昏</a></li>
+                <li><a href="#">谁人道我粥可温</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        技术栈
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">java</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">ssm</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">js/jquery</a></li>
+                    </ul>
+                </li>
+                <!--搜索框-->
+                <li class="search" >
+                    <form class="navbar-form navbar-left" role="search" >
+                        <div class="form-group" >
+                            <input id="inputSearch" type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!-- 登陆 -->
+        <div class="pull-right nav navbar-nav">
+            <a class="navbar-brand" href="#">登陆</a>
+        </div>
+    </div>
+</nav>
+
+<!--主题-->
+<div class="container-fluid">
+    <div class="color-white col-lg-7 col-lg-push-1" id="content-left"></div>
+    <div class="color-white col-lg-2 col-lg-push-2" id="content-right">
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

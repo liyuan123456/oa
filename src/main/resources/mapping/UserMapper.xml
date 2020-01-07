@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atliyuan.oa.dao.UserDao">
+    <resultMap id="userResultMap" type="com.atliyuan.oa.pojo.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="account_id" jdbcType="VARCHAR" property="accountId"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="token" jdbcType="CHAR" property="token"/>
+        <result column="gmt_create" jdbcType="BIGINT" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="BIGINT" property="gmtModified"/>
+    </resultMap>
+    <select id="selectAllUser" resultMap="userResultMap">
+        SELECT * FROM user;
+    </select>
+</mapper>
