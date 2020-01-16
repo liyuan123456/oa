@@ -1,5 +1,6 @@
 package com.atliyuan.oa.controller;
 
+import com.atliyuan.oa.common.ServerResponse;
 import com.atliyuan.oa.dao.UserDao;
 import com.atliyuan.oa.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +24,9 @@ public class HelloController {
 
     @GetMapping("/hello")
     @ResponseBody
-    public List<User> sayHello()
+    public ServerResponse sayHello()
     {
-        return userDao.selectAllUser();
+        return ServerResponse.createResposneBySuccess(userDao.selectAllUser());
     }
 
 

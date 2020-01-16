@@ -19,6 +19,9 @@ spring:
       max-wait: 60000
       # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
       time-between-eviction-runs-millis:  60000
+  jackson:
+    default-property-inclusion: non_null #全局jackson配置 不返回null字段
 mybatis:
   type-aliases-package: com.atliyuan.oa.pojo
   mapper-locations: classpath:mapping/*.xml
+
